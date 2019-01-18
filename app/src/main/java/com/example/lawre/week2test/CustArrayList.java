@@ -12,7 +12,7 @@ public class CustArrayList<E>
         arrayOfObjects = new Object[arraySize];
     }
 
-    public void add(Object o)
+    public void add(E o)
     {
         if(arrayOfObjects[arraySize-1] != null)
         {
@@ -36,12 +36,12 @@ public class CustArrayList<E>
         }
     }
 
-    public Object getObject(int i)
+    public E getObject(int i)
     {
-        return arrayOfObjects[i];
+        return (E)arrayOfObjects[i];
     }
 
-    public void remove(Object o)
+    public void remove(E o)
     {
         int index = -1;
         for(int i = 0; i < arraySize; i++)
